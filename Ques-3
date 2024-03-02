@@ -1,0 +1,62 @@
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class VerifyItemSelectionTest {
+
+    public static void main(String[] args) {
+        // Set the path to your ChromeDriver executable
+        System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
+
+        // Initialize ChromeDriver
+        WebDriver driver = new ChromeDriver();
+
+        // Test Case: Verify Item Selection
+        try {
+            // Step 1: Add items x, y, z, a, and b to the shopping cart
+            addItemsToShoppingCart(driver);
+
+            // Step 2: Navigate to the checkout page
+            navigateToCheckoutPage(driver);
+
+            // Expected Result: The checkout page should display the correct list of items (x, y, z, a, b).
+            verifySelectedItemsOnCheckoutPage(driver);
+
+            System.out.println("Test Case Passed!");
+        } catch (Exception e) {
+            System.err.println("Test Case Failed! " + e.getMessage());
+        } finally {
+            // Close the browser
+            driver.quit();
+        }
+    }
+
+    private static void addItemsToShoppingCart(WebDriver driver) {
+        // Your implementation to add items (x, y, z, a, b) to the shopping cart
+        // For example:
+        // driver.findElement(By.id("itemId")).click();
+        // Repeat for each item
+    }
+
+    private static void navigateToCheckoutPage(WebDriver driver) {
+        // Your implementation to navigate to the checkout page
+        // For example:
+        // driver.findElement(By.id("checkoutButton")).click();
+    }
+
+    private static void verifySelectedItemsOnCheckoutPage(WebDriver driver) {
+        // Your implementation to verify the selected items on the checkout page
+        // For example:
+        WebElement checkoutPage = driver.findElement(By.id("checkoutPage"));
+        String displayedItems = checkoutPage.findElement(By.className("selected-items")).getText();
+        String expectedItems = "x, y, z, a, b";
+
+        // Assuming the selected items are displayed in a specific element on the checkout page
+        if (displayedItems.equals(expectedItems)) {
+            System.out.println("Selected items are correctly displayed on the checkout page.");
+        } else {
+            throw new RuntimeException("Selected items are not displayed as expected on the checkout page.");
+        }
+    }
+}
