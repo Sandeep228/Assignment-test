@@ -1,0 +1,15 @@
+## Bugs/Defects Identified in the Image:
+
+### 1 Misspelling:
+
+- The word "Google" is misspelled as "Gooogle" in the search bar.
+- In the icon, there is a misspelled word "Hopping," it should be "Shopping."
+- At the left bottom corner, "Done Done" is present, which is of no use.
+
+### 2 Wrong Element:
+
+- At the top right corner, there is the wrong element for closing the current window.
+- In the second tab, there is a page named "Untitled," which is incorrect. It should be a new tab.
+- In the corner, there is a loader that should not be there.
+- There are two scrollbar icons in the right corner.
+- The heading of the page should be "Mozilla Firefox."

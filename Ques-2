@@ -1,0 +1,65 @@
+Test Cases for Amazon Checkout Page:
+
+# Verify Item Selection:
+
+Description: Ensure that the selected items (x, y, z, a, b) are correctly displayed on the checkout page.
+Steps:
+Add items x, y, z, a, and b to the shopping cart.
+Navigate to the checkout page.
+Expected Result: The checkout page should display the correct list of items (x, y, z, a, b).
+
+# Verify Total Amount Calculation:
+
+Description: Confirm that the total amount is calculated accurately based on the prices of items x, y, z, a, and b.
+Steps:
+Add items x, y, z, a, and b to the shopping cart.
+Check the total amount on the checkout page.
+Expected Result: The total amount should be the sum of the individual prices of items x, y, z, a, and b.
+# Verify Payment Options:
+
+Description: Ensure that multiple payment options (credit card, debit card, net banking, etc.) are available on the checkout page.
+Steps:
+Navigate to the checkout page.
+Check for the availability of various payment options.
+Expected Result: Multiple payment options should be visible for the user to choose from.
+
+# Verify Address Information:
+
+Description: Confirm that the correct shipping address is displayed on the checkout page.
+Steps:
+Add items x, y, z, a, and b to the shopping cart.
+Proceed to the checkout page.
+Expected Result: The correct shipping address associated with the user's account should be displayed.
+
+# Verify Order Placement:
+
+Description: Ensure that the order is successfully placed after completing the payment.
+Steps:
+Add items x, y, z, a, and b to the shopping cart.
+Complete the payment process.
+Check the order confirmation page.
+Expected Result: The order confirmation page should be displayed, confirming the successful placement of the order.
+
+# Verify Order Confirmation Email:
+
+Description: Confirm that an order confirmation email is sent to the user after placing the order.
+Steps:
+Place an order for items x, y, z, a, and b.
+Check the user's email inbox for the order confirmation email.
+Expected Result: An order confirmation email should be received containing details of the purchased items and order.
+
+# Verify Order History:
+
+Description: Ensure that the order is recorded in the user's order history.
+Steps:
+Place an order for items x, y, z, a, and b.
+Navigate to the user's order history.
+Expected Result: The recently placed order should be visible in the user's order history.
+
+# Verify Error Handling - Invalid Payment:
+
+Description: Test the system's response when an invalid payment method is used.
+Steps:
+Add items x, y, z, a, and b to the shopping cart.
+Attempt to make a payment using an invalid payment method.
+Expected Result: An appropriate error message should be displayed, indicating the issue with the payment method.
